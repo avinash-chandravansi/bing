@@ -9,7 +9,7 @@ app.get('/', function(req, res) {
 
   app.get('/add', function(req, res) {
     console.log(req.query);
-    res.send(req.query);
+    res.send(JSON.stringify(req.query));
   });
   
 app.listen(PORT, () => {
