@@ -7,6 +7,9 @@ app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname, '/index.html'));
   });
 
+  app.get('/n', function(req, res) {
+    res.sendFile(path.join(__dirname, '/index.html'));
+  });
   app.get('/add', function(req, res) {
     console.log(req.query);
     res.send(JSON.stringify(req.query));
