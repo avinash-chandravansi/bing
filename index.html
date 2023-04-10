@@ -9,6 +9,7 @@
       background-color: #f4f4f4;
       padding: 20px;
       border-radius: 5px;
+      text-align: center;
     }
     label {
       display: block;
@@ -21,6 +22,19 @@
       border-radius: 5px;
       border: none;
       width: 80%;
+    }
+    input[type="submit"] {
+      display: block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      border-radius: 5px;
+      border: none;
+      background-color: #4CAF50;
+      color: white;
+      font-size: 16px;
+    }
+    input[type="submit"]:hover {
+      background-color: #3e8e41;
     }
   </style>
 </head>
@@ -40,6 +54,7 @@
     <input type="text" id="textbox6" name="textbox6"><br>
     <label for="textbox7">Text Box 7:</label>
     <input type="text" id="textbox7" name="textbox7"><br>
+    <input type="submit" value="Submit">
   </form>
 </body>
 </html>
