@@ -12,7 +12,7 @@ app.get('/', function(req, res) {
 
     fs.readFile('./data.json', 'utf8', (err, data) => {
       if (!err) {
-         res.JSON(data)
+         res.send(data)
          
       }
       else
