@@ -10,8 +10,8 @@
     "routes": [
       {
       
-        "src": "/",
+        "src": "/(.*)",
         "dest": "server.js"
-      }, { "src": "/getdata", "methods": ["GET"], "dest": "/data.json" }
+      }
     ]
   }
