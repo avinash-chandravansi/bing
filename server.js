@@ -10,14 +10,14 @@ app.get('/', function(req, res) {
   app.get('/fetch', function(req, res) {
 
 
-    fs.readFile('/data.json', 'utf8', (err, data) => {
+    fs.readFile('./data.json', 'utf8', (err, data) => {
       if (!err) {
          res.send(data)
          
       }
       else
       {
-        res.send("Current directory:" + __dirname)
+        res.send("oops!! something crashed")
       }
   });
   });
