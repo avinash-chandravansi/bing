@@ -17,7 +17,7 @@ app.get('/', function(req, res) {
       }
       else
       {
-        res.send(err)
+        res.send("Current directory:", __dirname)
       }
   });
   });
