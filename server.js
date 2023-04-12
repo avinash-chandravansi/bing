@@ -4,13 +4,13 @@ const path = require('path');
 const PORT = process.env.PORT || 3000;
 const fs = require('fs');
 app.get('/', function(req, res) {
-    res.sendFile(path.join(__dirname, '/index.html'));
+    res.sendFile(path.join__dirname,( '/index.html'));
   });
 
   app.get('/fetch', function(req, res) {
 
 
-    fs.readFile('./data.json', 'utf8', (err, data) => {
+    fs.readFile(path.join__dirname,( '/data.json'), 'utf8', (err, data) => {
       if (!err) {
          res.send(data)
          
