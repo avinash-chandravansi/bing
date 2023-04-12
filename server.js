@@ -3,8 +3,6 @@ const app = express();
 const path = require('path');
 const PORT = process.env.PORT || 3000;
 const fs = require('fs');
-const jsonDirectory = path.join(process.cwd(), 'json');
-
 app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname, '/index.html'));
   });
@@ -12,7 +10,7 @@ app.get('/', function(req, res) {
   app.get('/fetch', function(req, res) {
 
 
-    fs.readFile(jsonDirectory + '/data.json', 'utf8', (err, data) => {
+    fs.readFile('/data.json', 'utf8', (err, data) => {
       if (!err) {
          res.send(data)
          
