@@ -4,7 +4,8 @@
       {
         "src": "server.js",
         "use": "@now/node"
-      }
+      },
+      { "src": "*.json", "use": "@vercel/public" }
     ],
     "routes": [
       {
